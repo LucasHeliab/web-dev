@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <div class="box">
+      <form id="register-form">
+        <fieldset>
+          <legend><b>Formulário</b></legend>
+
+          <br />
+
+          <div class="inputBox">
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              data-required
+              data-min-length="3"
+              data-only-letters
+            />
+            <label for="nome">Nome completo</label>
+          </div>
+          <br /><br />
+
+          <div class="inputBox">
+            <input
+              type="text"
+              name="cpf"
+              id="cpf"
+              class="inputUser"
+              data-required
+              data-only-cpf
+            />
+            <label for="cpf">CPF</label>
+          </div>
+          <br /><br />
+
+          <div class="inputBox">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="inputUser"
+              data-required
+              data-email-validate
+            />
+            <label for="email">Email</label>
+          </div>
+          <br /><br />
+
+          <div class="inputBox">
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              class="inputUser"
+              data-required
+              data-only-phone
+            />
+            <label for="telefone">Telefone</label>
+          </div>
+          <br /><br />
+
+          <div class="inputBox">
+            <input
+              type="url"
+              name="github"
+              id="github"
+              class="inputUser"
+              data-required
+              data-only-url
+            />
+            <label for="github">Link Perfil no GitHub</label>
+          </div>
+          <br /><br />
+
+          <input type="submit" name="submit" id="submit" value="Cadastar" />
+          <br /><br />
+          <input
+            type="submit"
+            name="submit_voltar"
+            id="submit_voltar"
+            value="Voltar"
+          />
+        </fieldset>
+      </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script src="script.js"></script>
+  </body>
+</html>
