@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Projeto 2</title>
+  </head>
+  <body>
+    <div class="box">
+      <form id="register-form">
+        <fieldset>
+          <legend><b>Oportunidade</b></legend>
+
+          <br />
+          <div>
+            <p>Oportunidade de estágio remunerado!!</p>
+            <p>Clique abaixo e cadastre-se</p>
+          </div>
+
+          <br /><br />
+
+          <input
+            type="button"
+            name="submit"
+            id="submit"
+            value="Cadastar"
+            onclick="Navegar()"
+          />
+        </fieldset>
+      </form>
+    </div>
+    <p class="error-validation template"></p>
+    <script type="text/javascript">
+      function Navegar() {
+        location.href = 'form/form.html'
+      }
+    </script>
+  </body>
+</html>
